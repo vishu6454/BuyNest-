@@ -189,8 +189,8 @@ export default function Home() {
             key={i}
             className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
               i === index
-                ? "bg-blue-500 dark:bg-blue-400 scale-125 shadow-lg"
-                : "bg-gray-300 dark:bg-gray-500 hover:bg-gray-400"
+                ? "  scale-125 shadow-lg"
+                : ""
             }`}
             onClick={() => setIndex([i, i > index ? 1 : -1])}
           />
