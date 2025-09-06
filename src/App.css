@@ -1,0 +1,12 @@
+
+
+/* Optional: Adjust main layout containers */
+
+main {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
