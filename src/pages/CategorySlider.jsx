@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { wrap } from "@popmotion/popcorn";
 import { forwardRef, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   FaTshirt,
   FaMobileAlt,
@@ -72,17 +73,17 @@ export default function CategorySlider() {
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
           <AnimatePresence initial={false} mode="popLayout">
             {visibleCategories.map((item) => (
-              <motion.a
+              <motion.div
                 key={item.name}
-                href={item.Link}
-                className="flex-shrink-0"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4 }}
               >
-                <Slide name={item.name} color={item.color} icon={item.icon} />
-              </motion.a>
+                <Link to={item.Link} className="block">
+                  <Slide name={item.name} color={item.color} icon={item.icon} />
+                </Link>
+              </motion.div>
             ))}
           </AnimatePresence>
         </div>
