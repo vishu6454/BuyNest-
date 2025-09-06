@@ -120,13 +120,13 @@ export default function Home() {
 
       {/* Navigation Arrows */}
       <button
-        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-gray-400 bg-white/60 dark:bg-gray-600/70 backdrop-blur p-2 rounded-full z-40 shadow hover:bg-gray-300 dark:hover:bg-gray-500 transition"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-gray-400 bg-white/60 dark:bg-gray-500/70 backdrop-blur  rounded-full z-40 shadow hover:bg-gray-300 dark:hover:bg-gray-500 transition"
         onClick={() => paginate(-1)}
       >
         <ChevronLeftIcon className="w-6 h-6" />
       </button>
       <button
-        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-gray-400 bg-white/60 dark:bg-gray-600/70 backdrop-blur p-2 rounded-full z-40 shadow hover:bg-gray-300 dark:hover:bg-gray-500 transition"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-gray-400 bg-white/60 dark:bg-gray-500/70 backdrop-blur  rounded-full z-40 shadow hover:bg-gray-300 dark:hover:bg-gray-500 transition"
         onClick={() => paginate(1)}
       >
         <ChevronRightIcon className="w-6 h-6" />
